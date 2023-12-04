@@ -198,6 +198,7 @@ for(let i=0;i<purchasedIds.length;i++){
   })
 }
 res.json({purchasedCourses:purchasedCourses});
+
 });
 
 app.listen(3000, () => {
