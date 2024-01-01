@@ -33,14 +33,9 @@ const coursSchema=new mongoose.Schema({
  const Courses=mongoose.model("Courses",coursSchema);
 
  mongoose.connect("mongodb+srv://Shubhang:67WexsBlgWqz33Qt@cluster0.ic1hndy.mongodb.net/",{ useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" })
-let ADMINS = [];
-let USERS = [];
-let COURSES = [];
-ADMINS = JSON.parse(fs.readFileSync('admin.json', 'utf8'));
-USERS = JSON.parse(fs.readFileSync('user.json', 'utf8'));
-COURSES = JSON.parse(fs.readFileSync('course.json', 'utf8'));
+
 let secretKey="shubhang";
-let id=COURSES.length;
+
 const generateJwt=(user)=>{
 const payload={username:user};
 const token=jwt.sign(payload,secretKey,{expiresIn:"1hr"});
