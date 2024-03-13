@@ -20,10 +20,7 @@ function App() {
    
 
   return (
-    <div style={{
-      width: "100vw",
-    height: "100vh",
-    backgroundColor: "#eeeeee"}} >
+    <div  className="app" >
    <RecoilRoot>
  
    <Router>
@@ -40,8 +37,7 @@ function App() {
         <Route path="/addcourses" element={<Addcourses/>}/>
         <Route path="/courseuser/:courseid" element={<CourseUser/>}/>
         <Route path="/purchased" element={<PurchasedCourse/>}/>
-     
-      </Routes>
+     </Routes>
     </Router>
     </RecoilRoot>
         </div>

@@ -29,7 +29,7 @@ function Appbar(){
     justifyContent:"space-between",
     margin:10}}>
        <div>
-       <Typography variant={"h6"}> Coursera</Typography>
+       <Typography variant={"h6"}> CourseVista</Typography>
        </div>
        <div style={{display:"flex"}}>
        <div><Button variant="text" size="large" style={{marginRight:10}} onClick={()=>{
@@ -89,7 +89,7 @@ return <div style={{display:'flex',
       <div style={{marginRight:10}}><Button variant="contained" size="large" onClick={()=>{
        navigate("/signin");
       }} >Signin</Button></div>
-      <div><Button variant="contained" size="large" onClick={()=>{
+      <div style={{marginRight:10}}><Button variant="contained" size="large" onClick={()=>{
        navigate("/signup");
       }}>Signup</Button></div>
         </div>

@@ -44,7 +44,7 @@ return token;
 // { username: 'ss009', iat: 1697713072, exp: 1697716672 } // this is the user format;
 
 const authenticateJwt =(req:Request,res:Response,next:NextFunction)=>{
-  let header=req.headers["authorization"];
+  let header=req.headers.authorization;
   if(header){
   const token=header.split(' ')[1];
   jwt.verify(token,secretKey,(err,user)=>{
