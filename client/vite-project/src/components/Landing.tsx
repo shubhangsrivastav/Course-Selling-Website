@@ -12,7 +12,7 @@ function Landing(){
         <Grid item xs={12} md={6} lg={6}>
             <div style={{marginTop: 100}}>
                 <Typography variant={"h2"}>
-                    Coursera 
+                    CourseVista 
                 </Typography>
                 <Typography variant={"h5"}>
                     A place to learn, earn and grow
